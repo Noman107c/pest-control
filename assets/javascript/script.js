@@ -50,33 +50,33 @@ overlay.addEventListener("click", () => {
 });
 
 // Dropdown toggle with smooth animation
-document.querySelectorAll(".dropdown > a").forEach(link => {
-    link.addEventListener("click", function (e) {
-        if (window.innerWidth <= 1230) {
-            e.preventDefault();
-            const parent = this.parentElement;
-            const submenu = parent.querySelector(".submenu");
+// document.querySelectorAll(".dropdown > a").forEach(link => {
+//     link.addEventListener("click", function (e) {
+//         if (window.innerWidth <= 1230) {
+//             e.preventDefault();
+//             const parent = this.parentElement;
+//             const submenu = parent.querySelector(".submenu");
 
-            const isOpen = parent.classList.contains("open");
+//             const isOpen = parent.classList.contains("open");
 
-            // Accordion behavior: close others
-            document.querySelectorAll(".dropdown").forEach(drop => {
-                drop.classList.remove("open");
-                const sub = drop.querySelector(".submenu");
-                if (sub) sub.style.maxHeight = null;
-            });
+//             // Accordion behavior: close others
+//             document.querySelectorAll(".dropdown").forEach(drop => {
+//                 drop.classList.remove("open");
+//                 const sub = drop.querySelector(".submenu");
+//                 if (sub) sub.style.maxHeight = null;
+//             });
 
-            // Toggle this one
-            if (!isOpen) {
-                parent.classList.add("open");
-                submenu.style.maxHeight = submenu.scrollHeight + "px";
-            } else {
-                parent.classList.remove("open");
-                submenu.style.maxHeight = null;
-            }
-        }
-    });
-});
+//             // Toggle this one
+//             if (!isOpen) {
+//                 parent.classList.add("open");
+//                 submenu.style.maxHeight = submenu.scrollHeight + "px";
+//             } else {
+//                 parent.classList.remove("open");
+//                 submenu.style.maxHeight = null;
+//             }
+//         }
+//     });
+// });
 
 /*---------------------------------- Header Active Menu------------------------------*/
 document.addEventListener('DOMContentLoaded', function () {
