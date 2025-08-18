@@ -1692,166 +1692,118 @@ img {
     justify-content: left;
     margin-top: 30px;
 }
-/*-----------------------[ 17.Footer CSS ]------------------------*/
+/* -----------------------[ 17. Footer CSS ]------------------------ */
+footer {
+    background-color: white; /* full footer background */
+    padding: 40px 20px;
+    color: #fff;
+    font-family: "Arial", sans-serif;
+}
+
+/* Subscribe Section */
 .subscribe-section {
-    background: #000;
+    background: #111;
     border-radius: 20px;
-    padding: 60px;
-    margin-top: -125px;
-    margin-bottom: 100px;
+    padding: 40px;
+    margin: -80px auto 80px auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 30px;
-    margin-left: -10px;
-    margin-right: -25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
 }
 .updat {
     font-weight: 500;
     color: #FFFFFF;
-    padding-bottom: 0;
     max-width: 570px;
 }
 .subscribe-input-main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: #FFFFFF;
-    padding: 10px 10px 10px 40px;
+    background: #fff;
+    padding: 10px 15px;
     width: 100%;
-    max-width: 570px;
+    max-width: 500px;
     border-radius: 42px;
 }
 .subscribe-input-main input {
-    width: 55%;
+    flex: 1;
     outline: none;
     border: none;
-    color: #000000;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
+    font-size: 16px;
+    padding: 10px;
 }
-.working-hours {
-    color: var(--3, #000);
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 36px;
-    padding-bottom: 20px;
+.subscribe-input-main button {
+    background: #00C2FF;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
-.timing-hrw {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 15px 0;
-    border-bottom: 2px solid #F5F6F7;
-}
-.timing-hrw p {
-    color: var(--4, #222);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-}
-.footer-row-quick {
-    justify-content: space-between;
+.subscribe-input-main button:hover {
+    background: #0099cc;
 }
 
-/* Footer Logo */
-.media-logo-call-footer a img {
-    max-width: 150px;   /* control size */
-    height: auto;
-    display: block;
-}
-
-.quicklinks-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-}
-.quicklinks-main ul li a {
-    color: var(--4, #222);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 40px;
-    transition: all 0.4s ease-in-out;
-}
-.quicklinks-main ul li a:hover {
-    color: #00C2FF;
-}
-.footer-img-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-}
-.footer-img-group .footer-imgs {
-    width: 100%;
-}
-.img-container {
-    position: relative;
-    overflow: hidden;
-    flex: 1;
-    display: block;
-}
-.footer-img-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.57);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.brand-instagram {
-    width: 40px;
-    opacity: 0;
-    transform: scale(0.5) rotate(0deg);
-    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-}
-.img-container:hover .footer-img-overlay {
-    opacity: 1;
-}
-.img-container:hover .brand-instagram {
-    opacity: 1;
-    transform: scale(1) rotate(360deg);
-}
+/* Footer Logo & Contact Row */
 .media-logo-call-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
-    border-radius: 30px;
-    background: var(--3, #000);
-    margin-top: 60px;
-    margin-bottom: 40px;
-    margin-left: 90px;
-    margin-right: 80px;
+    border-radius: 20px;
+    background: black;
+    margin: 40px auto;
+    flex-wrap: wrap;
+    max-width: 1200px;
 }
-.media-logo-call-footer .call-detl {
-    border-radius: 50px;
-    background: var(--14, #00C2FF);
-    padding: 10px 50px 10px 10px;
+.media-logo-call-footer a img {
+    max-width: 150px;
+    height: auto;
 }
-.media-logo-call-footer .call-detl .img-main-call {
-    background: var(--13, #000);
+
+/* Call Details */
+.call-detl {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
 }
-.media-logo-call-footer .call-detl a {
-    color: #FFFFFF;
+.call-detl .img-main-call {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #00C2FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.call-detl p {
+    font-size: 16px;
+    margin: 0;
+}
+.call-detl a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+.call-detl a:hover {
+    color: #00C2FF;
+}
+
+/* Social Media Icons */
 .footer-med-icons-main {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 .footer-med-icons {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -1863,56 +1815,77 @@ img {
     background: #00C2FF;
 }
 .footer-med-icons img {
-    width: 32px;
+    width: 24px;
+    height: 24px;
 }
+
+
+
+/* Copyrights */
 .copyrights-main {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    padding-bottom: 40px;
-    padding-top: 20px;
-    justify-content: center;
-}
-.copyrights-main p,
-.copyrights-main a {
-    color: var(--4, #222);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
     text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+.copyrights-main a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 .copyrights-main a:hover {
     color: #00C2FF;
 }
-.call-detl {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+
+/* ----------------------- Responsive ----------------------- */
+
+/* Tablets */
+@media (max-width: 1000px) {
+    .subscribe-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .media-logo-call-footer {
+        flex-direction: column;
+        text-align: left;
+    }
+    .call-detl {
+        justify-content: left;
+    }
+    .quicklinks-main {
+        flex-direction: column;
+        align-items: right;
+    }
 }
-.call-detl .img-main-call {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: #00C2FF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+/* Mobile */
+@media (max-width: 1000px) {
+    .subscribe-input-main {
+        flex-direction: row;
+        padding: 15px;
+    }
+    .subscribe-input-main input {
+        width: 100%;
+        margin-bottom: 100px;
+        justify-content: left;
+    }
+    .subscribe-input-main button {
+        width: 100%;
+        justify-content: right;
+    }
+    .media-logo-call-footer a img {
+        max-width: 120px;
+    }
+    .footer-med-icons {
+        width: 40px;
+        height: 40px;
+    }
+    .footer-med-icons img {
+        width: 20px;
+        height: 20px;
+    }
 }
-.call-detl p {
-    color: var(--5, #FFF);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    padding-bottom: 10px;
-}
-.call-detl a {
-    color: #FFF;
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 30px;
-    transition: all 0.3s ease-in-out;
-}
+
 /*-----------------------[ 18.Bottom To Top Button CSS ]------------------------*/
 button.bottom-top-button {
     position: fixed;
