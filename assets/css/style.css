@@ -270,11 +270,15 @@ button {
     align-items: center;
     gap: 76px;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+img {
+  max-width: 100%;
+  height: auto;
 }
+
+.logo img {
+  width: 150px;  /* override for logo */
+}
+
 .mobile-logo {
     display: none;
 }
@@ -767,21 +771,8 @@ button {
     justify-content: center;
     margin-top: 60px;
 }
-.subtract-img {
-    max-width: 100%;
-    position: absolute;
-}
-.about-img1 {
-    max-width: 100%;
-}
-.about-img2 {
-    position: absolute;
-    top: -60px;
-    left: 130px;
-    border-radius: 50%;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.20);
-    animation: mover 2s infinite alternate;
-}
+
+
 .about-img3 {
     position: absolute;
     bottom: -150px;
@@ -790,6 +781,39 @@ button {
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.20);
     animation: mover 2s infinite alternate;
 }
+
+/* Section Two images */
+.sub-img-main {
+  position: relative;
+  text-align: center;
+}
+
+.about-img1 {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  margin-top: -500px;
+}
+
+.sub-images-wrapper {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .subtract-img {
+  width: 120px;
+  margin-bottom: 10px;
+} */
+
+.about-img2 {
+  width: 220px;
+  border-radius: 10px;
+}
+
 @keyframes mover {
     0% {
         transform: translateY(0);
@@ -1728,6 +1752,14 @@ button {
 .footer-row-quick {
     justify-content: space-between;
 }
+
+/* Footer Logo */
+.media-logo-call-footer a img {
+    max-width: 150px;   /* control size */
+    height: auto;
+    display: block;
+}
+
 .quicklinks-main {
     display: flex;
     align-items: center;
@@ -1796,6 +1828,8 @@ button {
     background: var(--3, #000);
     margin-top: 60px;
     margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 .media-logo-call-footer .call-detl {
     border-radius: 50px;
@@ -1835,6 +1869,8 @@ button {
     justify-content: space-between;
     gap: 15px;
     padding-bottom: 40px;
+    padding-top: 20px;
+    justify-content: center;
 }
 .copyrights-main p,
 .copyrights-main a {
