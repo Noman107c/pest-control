@@ -1436,10 +1436,12 @@ img {
 .testimonial-section-main {
     display: flex;
     align-items: stretch;
+    justify-content: center;
 }
 .man-cleaning-home {
-    max-width: 50%;
     object-fit: cover;
+    width: 1000%;
+    
 }
 .testimonials-col-main {
     background: var(--12, #F5F6F7);
@@ -1695,14 +1697,14 @@ img {
     margin-top: 30px;
 }
 /* -----------------------[ 17. Footer CSS ]------------------------ */
-footer {
-    background-color: white; /* full footer background */
+/* footer {
+    background-color: white; 
     padding: 40px 20px;
     color: #fff;
     font-family: "Arial", sans-serif;
-    width: 100%;            /* full width */
-    box-sizing: border-box; /* include padding in width */
-}
+    width: 100%;            
+    box-sizing: border-box; 
+} */
 
 /* ------------------- Subscribe Section ------------------- */
 .subscribe-section {
@@ -1760,7 +1762,7 @@ footer {
 
 /* ------------------- Footer Logo & Contact Row ------------------- */
 .media-logo-call-footer {
-    background: #111;
+    background: #000000;
     border-radius: 20px;
     padding: 40px 20px;     /* consistent horizontal padding */
     display: flex;
@@ -1769,14 +1771,12 @@ footer {
     gap: 30px;
     flex-wrap: wrap;
     box-sizing: border-box; /* include padding in width */
-    margin-left:80px;
-    margin-right: 80px;
+    margin-left:120px;
+    margin-right: 120px;
+    justify-content: center;
 }
 
-.media-logo-call-footer a img {
-    max-width: 150px;
-    height: 50px;
-}
+
 
 /* ------------------- Call Details ------------------- */
 .call-detl {
@@ -1817,12 +1817,13 @@ footer {
     display: flex;
     align-items: center;
     gap: 15px;
+    justify-content: center;
 }
 
 .footer-med-icons {
     width: 50px;
     height: 50px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 249, 249, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1841,10 +1842,11 @@ footer {
 
 /* ------------------- Copyrights ------------------- */
 .copyrights-main {
-    text-align: center;
-    padding: 20px 0;
+    text-align: center;          /* Center text horizontally */
+    padding: 40px 0 20px 0;      /* 40px top gap, 20px bottom padding */
     font-size: 14px;
-    color: black;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;              /* Center horizontally if block width less than container */
 }
 
 .copyrights-main a {
@@ -1853,9 +1855,7 @@ footer {
     transition: color 0.3s ease-in-out;
 }
 
-.copyrights-main a:hover {
-    color: #00C2FF;
-}
+
 
 
 /* ----------------------- Responsive ----------------------- */
