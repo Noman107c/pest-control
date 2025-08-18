@@ -1700,29 +1700,32 @@ footer {
     padding: 40px 20px;
     color: #fff;
     font-family: "Arial", sans-serif;
-    width: 100%;   /* ✅ ensures full width */
+    width: 100%;            /* full width */
+    box-sizing: border-box; /* include padding in width */
 }
 
-/* Subscribe Section */
+/* ------------------- Subscribe Section ------------------- */
 .subscribe-section {
     background: #111;
     border-radius: 20px;
-    padding: 40px;
-    margin: -80px auto 80px auto;
+    padding: 40px 20px;     /* consistent horizontal padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
-    width: 100%;          /* ✅ full width */
-    max-width: 100%;      /* ✅ remove fixed container limit */
-    box-sizing: border-box;
+    width: 100%;            /* full width */
+    box-sizing: border-box; /* include padding in width */
+    max-width: 100%;        /* remove any container width limits */
+    margin: 0 auto 80px auto;
 }
+
 .updat {
     font-weight: 500;
     color: #FFFFFF;
     max-width: 570px;
 }
+
 .subscribe-input-main {
     display: flex;
     align-items: center;
@@ -1732,6 +1735,7 @@ footer {
     max-width: 500px;
     border-radius: 42px;
 }
+
 .subscribe-input-main input {
     flex: 1;
     outline: none;
@@ -1739,6 +1743,7 @@ footer {
     font-size: 16px;
     padding: 10px;
 }
+
 .subscribe-input-main button {
     background: #00C2FF;
     border: none;
@@ -1748,44 +1753,39 @@ footer {
     cursor: pointer;
     transition: 0.3s ease;
 }
+
 .subscribe-input-main button:hover {
     background: #0099cc;
 }
-.timing-hrw {
-    color: black;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    margin-top: 20px;
-}
 
-
-/* Footer Logo & Contact Row */
+/* ------------------- Footer Logo & Contact Row ------------------- */
 .media-logo-call-footer {
+    background: #111;
+    border-radius: 20px;
+    padding: 40px 20px;     /* consistent horizontal padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background: black;
-    margin: 20px 0;   /* ✅ remove auto centering */
+    gap: 30px;
     flex-wrap: wrap;
-    width: 100%;      /* ✅ full width */
-    box-sizing: border-box;
+    box-sizing: border-box; /* include padding in width */
+    margin-left:80px;
+    margin-right: 80px;
 }
+
 .media-logo-call-footer a img {
     max-width: 150px;
     height: 50px;
 }
 
-/* Call Details */
+/* ------------------- Call Details ------------------- */
 .call-detl {
     display: flex;
     align-items: center;
     gap: 15px;
     color: #fff;
 }
+
 .call-detl .img-main-call {
     width: 60px;
     height: 60px;
@@ -1795,26 +1795,30 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
 .call-detl p {
     font-size: 16px;
     margin: 0;
 }
+
 .call-detl a {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
     transition: color 0.3s ease-in-out;
 }
+
 .call-detl a:hover {
     color: #00C2FF;
 }
 
-/* Social Media Icons */
+/* ------------------- Social Media Icons ------------------- */
 .footer-med-icons-main {
     display: flex;
     align-items: center;
     gap: 15px;
 }
+
 .footer-med-icons {
     width: 50px;
     height: 50px;
@@ -1825,29 +1829,34 @@ footer {
     justify-content: center;
     transition: all 0.3s ease-in-out;
 }
+
 .footer-med-icons:hover {
     background: #00C2FF;
 }
+
 .footer-med-icons img {
     width: 24px;
     height: 24px;
 }
 
-/* Copyrights */
+/* ------------------- Copyrights ------------------- */
 .copyrights-main {
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
     color: black;
 }
+
 .copyrights-main a {
     color: #bbb;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
+
 .copyrights-main a:hover {
     color: #00C2FF;
 }
+
 
 /* ----------------------- Responsive ----------------------- */
 
