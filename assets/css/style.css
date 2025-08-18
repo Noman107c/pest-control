@@ -1702,6 +1702,8 @@ img {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-left: -10px;
+    margin-right: -25px;
 }
 .updat {
     font-weight: 500;
@@ -1828,7 +1830,7 @@ img {
     background: var(--3, #000);
     margin-top: 60px;
     margin-bottom: 40px;
-    margin-left: 80px;
+    margin-left: 90px;
     margin-right: 80px;
 }
 .media-logo-call-footer .call-detl {
