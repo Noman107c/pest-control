@@ -223,7 +223,7 @@ button {
     font-size: 18px;
     font-weight: 600;
     line-height: 24px;
-    background: #00C2FF;
+    background: #030303;
     border-radius: 30px;
     padding: 18px 30px;
     position: relative;
@@ -240,7 +240,7 @@ button {
     top: 0;
     height: 0;
     width: 100%;
-    background-color: #000;
+    background-color: #00C2FF;
     z-index: -1;
     transition: inherit;
     transition: all 0.3s ease;
@@ -364,11 +364,11 @@ img {
     border-radius: 40px;
     gap: 10px;
 }
-.call .headphone-main {
+/* .call .headphone-main {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #FFF;
+    background: #161515;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -384,7 +384,7 @@ img {
     font-size: 20px;
     font-weight: 600;
     line-height: 26px;
-}
+} */
 /* Hamburger */
 .hamburger {
     display: none;
@@ -751,12 +751,12 @@ img {
     background: transparent;
     border: 2px solid #00C2FF;
 }
-.about-sec-main .call .headphone-main {
+/* .about-sec-main .call .headphone-main {
     background: #00C2FF;
 }
 .about-sec-main .call .headphone-main img {
     filter: brightness(0) saturate(100%) invert(82%) sepia(100%) saturate(0%) hue-rotate(85deg) brightness(112%) contrast(101%);
-}
+} */
 .about-sec-main .call .need-help-main p,
 .about-sec-main .call .need-help-main a {
     color: #000;
