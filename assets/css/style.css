@@ -1762,17 +1762,16 @@ img {
 
 /* ------------------- Footer Logo & Contact Row ------------------- */
 .media-logo-call-footer {
-    background: white;
-    border-radius: 20px;
-    padding: 40px 20px;     /* consistent horizontal padding */
+ /* consistent horizontal padding */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
     flex-wrap: wrap;
     box-sizing: border-box; /* include padding in width */
-    margin-left:120px;
-    margin-right: 120px;
+    /* margin-left:120px;
+    margin-right: 120px; */
+    padding-bottom: 20px;
     justify-content: center;
 }
 
@@ -1869,17 +1868,9 @@ img {
 /* ------------------- Mobile Responsive ------------------- */
 @media (max-width: 1000px) {
     .footer-med-icons {
-        width: 10px;
-        height: 10px;
+      
         vertical-align: auto;
-    }
-    .footer-med-icons img {
-        width: 10px;
-        height: 10px;
-    }
-    .copyrights-main {
-        font-size: 10px;
-    }
+
 }
 
 
